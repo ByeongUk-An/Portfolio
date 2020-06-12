@@ -117,12 +117,20 @@ p {
 
 /* Navbar */
 #navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 1;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: black;
+  background: transparent;
   color: #fff;
   padding: 16px;
+  transition: all 300ms ease-in;
+}
+#navbar.navbar--dark {
+  background: var(--color-black);
+  padding: 8px;
 }
 
 .navbar__menu {
