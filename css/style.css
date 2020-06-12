@@ -175,3 +175,39 @@ p {
   border: 2px solid white;
   border-radius: 6px;
 }
+
+/* Section common */
+.section {
+  text-align: center;
+  padding: 50px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* About */
+.about__majors {
+  display: flex;
+  justify-content: space-between;
+  margin: 80px 0;
+}
+.major__icon {
+  width: 170px;
+  height: 170px;
+  line-height: 170px;
+  font-size: 70px;
+  margin: 0 auto;
+  border: 1px solid var(--color-blue);
+  border-radius: 50%;
+  margin-bottom: 16px;
+  color: var(--color-blue);
+}
+.major__icon i {
+  transition: all 350ms ease;
+}
+.major__icon:hover i {
+  color: var(--color-orange);
+  transform: rotate(365deg) scale(1.1);
+}
+.major__title {
+  color: var(--color-dark-grey);
+}
