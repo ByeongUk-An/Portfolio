@@ -178,8 +178,11 @@ p {
 
 /* Section common */
 .section {
-  text-align: center;
   padding: 50px;
+  text-align: center;
+  margin: 0 auto;
+}
+.section__container {
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -210,4 +213,52 @@ p {
 }
 .major__title {
   color: var(--color-dark-grey);
+}
+
+/* Skill */
+#skills {
+  background: var(--color-yellow);
+}
+.skillset {
+  display: flex;
+  background: var(--color-light-grey);
+  color: var(--color-light-white);
+  margin: 20px 0;
+}
+.skillset__title {
+  color: var(--color-white);
+  margin-bottom: 10px;
+}
+.skillset__left {
+  flex-basis: 60%;
+  background: var(--color-dark-grey);
+  padding: 20px 40px;
+}
+.skill {
+  margin-bottom: 32px;
+}
+.skill__description {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+}
+.skill__bar {
+  width: 100%;
+  height: 3px;
+  background: var(--color-grey);
+}
+.skill__value {
+  height: 3px;
+  background: var(--color-orange);
+}
+.skillset__right {
+  flex-basis: 40%;
+  background: var(--color-light-grey);
+}
+.tools {
+  background: var(--color-grey);
+}
+.tools,
+.etc {
+  padding: 60px;
 }
