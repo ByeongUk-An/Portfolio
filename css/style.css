@@ -1,53 +1,21 @@
-/* Global */
-
-:root {
-  /* Color */
-
-  --color-white: #ffffff;
-
-  --color-light-white: #eeeeee;
-
-  --color-dark-white: #bdbdbd;
-
-  --color-pink: #fe918d;
-
-  --color-dark-pink: #ff6863;
-
-  --color-dark-grey: #4d4d4d;
-
-  --color-grey: #616161;
-
-  --color-light-grey: #7c7979;
-
-  --color-blue: #73aace;
-
-  --color-yellow: #fff7d1;
-
-  --color-orange: #feb546;
-
-  --color-black: #000000;
-
-  /* Font size */
-
-  --font-large: 48px;
-
-  --font-medium: 28px;
-
-  --font-regular: 18px;
-
-  --font-small: 16px;
-
-  --font-micro: 14px;
-
-  /* Font weight */
-
-  --weight-bold: 700;
-
-  --weight-semi-bold: 600;
-
-  --weight-regular: 400;
+/* Univeral tags */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
-
+body {
+  font-family: "Open Sans", sans-serif;
+  cursor: default;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+ul {
+  list-style: none;
+  padding-left: 0;
+}
 /* Typography */
 
 h1 {
@@ -89,9 +57,34 @@ p {
 
   margin: 4px 0;
 }
-/* Univeral tags */
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+
+/* Navbar */
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: black;
+  color: #fff;
+  padding: 16px;
+}
+
+.navbar__menu {
+  display: flex;
+}
+.navbar__logo {
+  font-size: medium;
+  font-weight: bold;
+}
+.navbar__menu__item {
+  font-size: medium;
+  padding: 8px 12px;
+  margin: 0 4px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.navbar__menu__item.active {
+  border: 1px solid #fff;
+}
+.navbar__menu__item:hover {
+  background: cornflowerblue;
 }
