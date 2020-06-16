@@ -82,6 +82,14 @@ workBtnContainer.addEventListener("click", (e) => {
     return;
   }
 
+  //클릭하면 해당버튼으로 css selected를 생성 및 제거
+  const active = document.querySelector(".category__btn.selected");
+  if (active != null) {
+    active.classList.remove("selected");
+  }
+
+  e.target.classList.add("selected");
+
   projectContainer.classList.add("anim-out");
 
   setTimeout(() => {
