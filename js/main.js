@@ -50,6 +50,13 @@ homeContactBtn.addEventListener("click", () => {
   scrollIntoView("#contact");
 });
 
+// scroll 했을 때 home의 opacity가 0으로 바뀌게 함
+const home = document.querySelector("#home");
+const homeHeight = home.getBoundingClientRect().height;
+document.addEventListener("scroll", () => {
+  home.style.opacity = 1 - window.scrollY / homeHeight;
+});
+
 function scrollIntoView(selector) {
   const scrollTo = document.querySelector(selector);
   scrollTo.scrollIntoView({ behavior: "smooth" });
