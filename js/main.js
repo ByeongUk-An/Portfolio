@@ -24,7 +24,7 @@ function abc() {
   time.innerHTML = `${hours}:${minutes}:${seconds}`;
 }
 
-setInterval(abc, 1000);
+// setInterval(abc, 1000);
 
 // NavBarmenu 를 클릭했을때 스크롤링이 되어진다.
 
