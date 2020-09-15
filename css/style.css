@@ -227,6 +227,9 @@ p {
   margin-bottom: 16px;
   color: var(--color-blue);
 }
+#about > p {
+  line-height: 1.8;
+}
 .major__icon i {
   transition: all 350ms ease;
 }
