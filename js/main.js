@@ -35,10 +35,17 @@ navbarMenu.addEventListener("click", (event) => {
   if (link == null) {
     return;
   }
+  navbarMenu.classList.remove("open");
   // console.log(event.target.dataset.link);
   // const scrollTo = document.querySelector(link);
   // scrollTo.scrollIntoView({ behavior: "smooth" });
   scrollIntoView(link);
+});
+
+//Navbar 모바일 토글
+const navbarToggleBtn = document.querySelector(".navbar__toggle-btn");
+navbarToggleBtn.addEventListener("click", () => {
+  navbarMenu.classList.toggle("open");
 });
 
 // Home Contact 버튼 클릭 이동
