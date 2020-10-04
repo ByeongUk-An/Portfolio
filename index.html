@@ -42,45 +42,51 @@
     </nav>
     <!-- Home -->
     <section id="home">
-      <img src="./imgs/pic.png" alt="증명사진" class="home_avatar" />
       <h1 class="home__title">An Byeonguk</h1>
       <h2 class="home__description">끊임없이 성장하는 개발자</h2>
       <!-- <p class="home__time">00:00:00</p> -->
       <button class="home__contact" data-link="#contact">Contact Me</button>
     </section>
     <!-- About -->
-    <section id="about" class="section section__container">
-      <h1>About me</h1>
-      <p>
-        안녕하세요. 끊임없이 공부하는 개발자 안병욱입니다. 20년 2월부터
-        HTML,CSS,JS공부 하였으며, 현재는 React로 프로젝트를 하고 있습니다.
-        <br />웹은 빠르게 진화를 하고 있습니다. 하지만 저도 마찬가지로 새로운
-        기술에 두려움보다는 흥미를 가지고 기술을 익혀 나가고 있습니다.
-      </p>
-      <!-- <div class="about__majors">
-        <div class="major">
-          <div class="major__icon">
-            <i class="fab fa-html5"></i>
+    <div class="about_con">
+      <div class="avatar_wrap">
+        <img src="./imgs/pic.png" alt="증명사진" class="home_avatar" />
+      </div>
+      <section id="about" class="section section__container aboutme">
+        <h1>About me</h1>
+        <p class="produce">
+          안녕하세요. 끊임없이 공부하는 개발자 안병욱입니다.<br />
+          20년 2월부터 HTML,CSS,JS공부 하였으며, 현재는 React로 프로젝트를 하고
+          있습니다.<br />
+          웹은 빠르게 진화를 하고 있습니다. 하지만 저도 마찬가지로 새로운
+          기술에<br />
+          두려움보다는 흥미를 가지고 기술을 익혀 나가고 있습니다.
+        </p>
+        <!-- <div class="about__majors">
+          <div class="major">
+            <div class="major__icon">
+              <i class="fab fa-html5"></i>
+            </div>
+            <div class="major__title">HTML &amp; CSS</div>
           </div>
-          <div class="major__title">HTML &amp; CSS</div>
-        </div>
-        <div class="major">
-          <div class="major__icon">
-            <i class="fab fa-js-square"></i>
+          <div class="major">
+            <div class="major__icon">
+              <i class="fab fa-js-square"></i>
+            </div>
+            <div class="major__title">JavaScript</div>
           </div>
-          <div class="major__title">JavaScript</div>
-        </div>
-        <div class="major">
-          <div class="major__icon">
-            <i class="fab fa-react"></i>
+          <div class="major">
+            <div class="major__icon">
+              <i class="fab fa-react"></i>
+            </div>
+            <div class="major__title">React</div>
           </div>
-          <div class="major__title">React</div>
-        </div>
-      </div> -->
-    </section>
+        </div> -->
+      </section>
+    </div>
     <hr />
-    <section class="section">
-      <h2>Education</h2>
+    <section class="section sectionedu">
+      <h2><span class="eduline">Edu</span>cation</h2>
       <p>
         - 김버그의 HTML&CSS는 재밌다 / 해당 강의를 통해 코딩의 재미와 HTML,CSS의
         기본을 습득.
@@ -90,11 +96,12 @@
       <p>
         - 리액트(공식문서) / 공식문서를 통해 기본기를 다지고 프로젝트에 적용.
       </p>
+      <div class="eduback"></div>
     </section>
     <!-- Skills -->
     <section id="skills" class="section">
       <div class="section__container">
-        <h1>Language & Framework</h1>
+        <h1 class="language">Language & Framework</h1>
         <div class="skillset">
           <div class="skillset__left">
             <h3 class="skillset__title">Skills</h3>
@@ -139,14 +146,14 @@
             <div class="tools">
               <h3 class="skillset__title">Tools</h3>
               <ul>
-                <li><span>Visual Studio Cod</span></li>
-                <li><span>CodePen</span></li>
+                <li><span class="etcfont">Visual Studio Cod</span></li>
+                <li><span class="etcfont">CodePen</span></li>
               </ul>
             </div>
             <div class="etc">
               <h3 class="skillset__title">Etc</h3>
               <ul>
-                <li><span>Git</span></li>
+                <li><span class="etcfont">Git</span></li>
               </ul>
             </div>
           </div>
@@ -156,7 +163,7 @@
     <!-- Work -->
     <section id="work" class="section">
       <div class="section__container">
-        <h1>My work</h1>
+        <h1 class="workhead">My work</h1>
         <div class="work__categories">
           <button class="category__btn selected" data-filter="*">
             All <span class="category__count">4</span>
